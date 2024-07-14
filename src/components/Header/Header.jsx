@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { configureStore } from '@reduxjs/toolkit'
 
-//Can do optimization by integrating both map in one
+// Can do optimizations by integrating both map in one
 function Header() {
   const authStatus = useSelector(state => state.auth.status)
   const navigate = useNavigate()
@@ -48,7 +48,7 @@ function Header() {
     document.getElementById('sidebar').style.width = "0px"
   }
   function openSidebar() {
-    document.getElementById('sidebar').style.width = "200px"
+    document.getElementById('sidebar').style.width = "134px"
   }
 
   return (
@@ -57,11 +57,11 @@ function Header() {
         <nav className='flex'>
 
           <div className='flex gap-4'>
-            <button className='inline-bock bg-teal-200 px-4 py-2 duration-200  hover:bg-white rounded-xl sm:hidden' onClick={openSidebar}  >
-              ☰
-            </button>
+            <button className='inline-bock bg-teal-200 px-4 py-2 duration-200  hover:bg-white rounded-xl sm:hidden' onClick={openSidebar}  >☰</button>
             <div className='mr-4'>
+              <Link to='/'>
                 <Logo />
+              </Link>
             </div>
           </div>
 
@@ -79,7 +79,7 @@ function Header() {
                   <li className='list-none' key={item.name}>
                     <button
                       onClick={() => { navigate(item.slug); closeSidebar() }}
-                      className=' bg-teal-200 px-4 py-2 duration-300 hover:bg-white rounded-full block w-40 mx-auto my-3'
+                      className=' bg-teal-200 px-4 py-2 duration-300 hover:bg-white rounded-full block w-28 m-2'
                     >{item.name}</button>
                   </li>
                 ) : null
@@ -88,6 +88,7 @@ function Header() {
 
 
           </div>
+
 
           <ul className='flex flex-wrap ml-auto gap-3 items-center'>
 
