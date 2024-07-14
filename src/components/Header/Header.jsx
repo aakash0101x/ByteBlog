@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Container, Logo, LogoutBtn } from '../index'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { configureStore } from '@reduxjs/toolkit'
 
 // Can do optimizations by integrating both map in one
 function Header() {
@@ -48,7 +47,7 @@ function Header() {
     document.getElementById('sidebar').style.width = "0px"
   }
   function openSidebar() {
-    document.getElementById('sidebar').style.width = "134px"
+    document.getElementById('sidebar').style.width = "220px"
   }
 
   return (
@@ -79,7 +78,7 @@ function Header() {
                   <li className='list-none' key={item.name}>
                     <button
                       onClick={() => { navigate(item.slug); closeSidebar() }}
-                      className=' bg-teal-200 px-4 py-2 duration-300 hover:bg-white rounded-full block w-28 m-2'
+                      className=' bg-teal-200 px-4 py-2 duration-300 hover:bg-white rounded-full block w-44 mx-auto my-3'
                     >{item.name}</button>
                   </li>
                 ) : null
