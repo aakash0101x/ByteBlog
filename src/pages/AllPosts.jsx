@@ -22,8 +22,8 @@ function AllPosts() {
     if (Loader) {
         return (<div className="w-full py-8 mt-4 text-center">
             <Container>
-                <div className="flex flex-wrap">
-                    <div className="p-2 w-full">
+                <div className="flex flex-wrap h-80">
+                    <div className="p-2 w-full pt-20">
                         <h1 className="text-2xl font-bold hover:text-gray-500">
                             Loading...
                         </h1>
@@ -36,21 +36,23 @@ function AllPosts() {
         </div>)
     }
     if (posts.length === 0) {
-        return (<Container>
-            <div className='text-center py-5'>
-                <h1 className='text-3xl font-extralight'>You haven't posted any blog</h1>
+        return (
+        <Container>
+            <div className='text-center py-5 h-80'>
+                <h1 className='text-3xl font-extralight pt-20'>You haven't posted any blog</h1>
             </div>
-        </Container>)
+        </Container>
+        )
 
     }
     return (
-         <div className='w-full py-12'>
+        <div className='w-full py-12'>
             <Container>
                 <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-4 lg:gap-8'>
                     {
-                       posts.map((post) => (
-                        <PostCard key={post.$id} {...post} />
-                    ))
+                        posts.map((post) => (
+                            <PostCard key={post.$id} {...post} />
+                        ))
                     }
                 </div>
             </Container>
