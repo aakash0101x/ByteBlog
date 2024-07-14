@@ -10,27 +10,20 @@ function ContactUs() {
         </p>
         <div className="flex gap-4">
           <a
-            href="mailto:contact@example.com"
+            href="mailto:ak.developers0101@gmail.com"
             className="text-yellow-300 hover:text-yellow-400 transition-colors"
           >
             Email Us
           </a>
           <a
-            href="https://twitter.com/example"
+            href="https://github.com/aakash0101x"
             className="text-yellow-300 hover:text-yellow-400 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Twitter
+            Github
           </a>
-          <a
-            href="https://facebook.com/example"
-            className="text-yellow-300 hover:text-yellow-400 transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Facebook
-          </a>
+         
         </div>
       </div>
     </div>
