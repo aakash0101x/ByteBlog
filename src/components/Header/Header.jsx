@@ -57,11 +57,11 @@ function Header() {
         <nav className='flex'>
 
           <div className='flex gap-4'>
-            <button className='inline-bock bg-teal-200 px-4 py-2 duration-200  hover:bg-white rounded-xl sm:hidden' onClick={openSidebar}  >☰</button>
+            <button className='inline-bock bg-teal-200 px-4 py-2 duration-200  hover:bg-white rounded-xl sm:hidden' onClick={openSidebar}  >
+              ☰
+            </button>
             <div className='mr-4'>
-              <Link to='/'>
-                <Logo />
-              </Link>
+              <Logo />
             </div>
           </div>
 
