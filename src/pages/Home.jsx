@@ -79,7 +79,7 @@ function Home() {
 
     return (
         
-        <div className='w-full py-16'>
+        <div className='w-full py-12'>
             
             <div className='text-center py-5'>
               <h1 className='text-3xl font-extralight'>My Feed</h1>
