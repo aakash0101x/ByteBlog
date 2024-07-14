@@ -13,17 +13,17 @@ function Features() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto py-10">
+    <div className="max-w-4xl mx-auto py-6 px-4">
       <div className="bg-white shadow-md rounded-lg p-6">
-        <h1 className="text-3xl font-semibold text-center mb-6">Features</h1>
+        <h1 className="text-2xl sm:text-3xl font-semibold text-center mb-6">Features</h1>
         <ul className="space-y-4">
           {
             features.map((feature, index) => (
               <li key={index} className="flex items-start">
-                <div className="bg-teal-500 text-white font-bold rounded-full h-8 w-8 flex items-center justify-center mr-4">
+                <div className="flex-shrink-0 h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center mr-4">
                   {index + 1}
                 </div>
-                <p className="text-lg text-gray-700">{feature}</p>
+                <p className="text-base sm:text-lg text-gray-700 flex-1">{feature}</p>
               </li>
             ))
           }
