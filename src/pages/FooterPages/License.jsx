@@ -12,7 +12,7 @@ function License() {
             <pre className="bg-gray-100 p-4 rounded text-sm mb-4 overflow-auto">
                 {`MIT License
 
-Copyright (c) 2024 Aakash Patel
+Copyright (c) 2024
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -37,7 +37,7 @@ THE SOFTWARE.`}
             </p>
 
             <p className="text-lg mb-4">
-                If you have any questions about this license or the terms of use, please feel free to contact us at [Your Contact Information].
+                If you have any questions about this license or the terms of use, please feel free to contact us at<b><i> ak.developer0101@gmail.com</i></b>
             </p>
         </div>
     )
