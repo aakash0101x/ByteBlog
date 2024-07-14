@@ -67,7 +67,7 @@ function Header() {
 
           <div id='sidebar' className='h-full w-0 fixed left-0 bg-teal-400 overflow-x-hidden duration-500'>
 
-            <button className='text-5xl text-center' onClick={closeSidebar}>
+            <button className='text-5xl text-center mx-6' onClick={closeSidebar}>
               &times;
             </button>
 
