@@ -14,7 +14,7 @@ function Footer() {
                             </div>
                             <div>
                                 <p className="text-sm">
-                                    &copy; Copyright 2023. All Rights Reserved by ByteBlog.
+                                    &copy; Copyright 2024. All Rights Reserved by ByteBlog.
                                 </p>
                             </div>
                         </div>
