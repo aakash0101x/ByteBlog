@@ -56,7 +56,7 @@ function Header() {
       <Container>
         <nav className='flex'>
 
-          <div className='flex gap-4'>
+          <div className='flex gap-1'>
             <button className='inline-bock bg-teal-200 px-4 py-2 duration-200  hover:bg-white rounded-xl sm:hidden' onClick={openSidebar}  >
               ☰
             </button>
