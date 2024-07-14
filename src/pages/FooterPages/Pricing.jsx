@@ -2,7 +2,7 @@ import React from 'react'
 
 function Pricing() {
   return (
-    <div className="bg-blue-500 text-white p-6 text-center">
+    <div className="bg-blue-600 text-white p-6 text-center">
       <h1 className="text-2xl font-bold mb-2">
         Welcome to Our Free and Open Source Blogging Website!
       </h1>
@@ -19,8 +19,8 @@ function Pricing() {
         We appreciate any feedback or contributions you can provide to help make this platform even better.
       </p>
       <a
-        href="https://github.com/your-repo-url"
-        className="bg-yellow-300 text-blue-600 px-4 py-2 rounded font-semibold hover:bg-yellow-400 transition-colors"
+        href="https://github.com/aakash0101x/ByteBlog"
+        className="bg-yellow-300 text-blue-800 px-4 py-2 rounded font-semibold hover:bg-yellow-400 transition-colors"
         target="_blank"
         rel="noopener noreferrer"
       >
