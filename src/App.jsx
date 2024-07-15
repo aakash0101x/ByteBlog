@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import authService from "./appwrite/auth"
 import { login, logout } from "./store/authSlice"
-import { Footer, Header } from './components'
+import { Footer, Header, LoaderComponent, Container } from './components'
 import { Outlet } from 'react-router-dom'
-import { Container } from './components'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -34,12 +33,13 @@ function App() {
     </div>
   ) : (
 
-    <Container>
-      <div className="flex flex-wrap">
-        <div className="p-2 w-full">
-          <h1 className="text-2xl font-bold hover:text-gray-500">
-            Loading...
-          </h1>
+   <Container>
+      <div className="p-2 w-full">
+        <h1 className="text-2xl text-center font-bold hover:text-gray-500">
+          Loading...
+        </h1>
+        <div className="w-32 my-6 mx-auto">
+          <LoaderComponent />
         </div>
       </div>
     </Container>
