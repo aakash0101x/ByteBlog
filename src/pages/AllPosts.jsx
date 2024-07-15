@@ -48,7 +48,7 @@ function AllPosts() {
 
     }
     return (
-        <div className='w-full py-12'>
+        <div className='w-full py-12 linear_grad'>
             <Container>
                 <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-4 lg:gap-8'>
                     {
