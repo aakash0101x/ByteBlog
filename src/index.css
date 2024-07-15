@@ -9,3 +9,22 @@
     overflow: hidden;
     word-wrap: break-word;
 }
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loader {
+    @apply border-gray-200;
+    @apply border-t-blue-500;
+    @apply rounded-full;
+    @apply w-20;
+    @apply h-20;
+    @apply border-8;
+    @apply animate-spin;
+  }
