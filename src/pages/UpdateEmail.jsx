@@ -62,7 +62,7 @@ function UpdateEmail() {
     } else {
         return (
             <Container>
-                <div className='my-10 w-96  mx-auto text-2xl bg-green-500 text-white px-4 py-2 rounded-md shadow-md'>
+                <div className='my-32 w-fit  mx-auto text-2xl bg-green-500 text-white px-4 py-2 rounded-2xl shadow-md'>
                     Email Updated Successfully
                 </div>
             </Container>
