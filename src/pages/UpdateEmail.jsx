@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import authService from '../appwrite/auth.js';
 import { useForm } from 'react-hook-form';
-import { Button, Input } from '../components';
-import { Container } from "../components"
+import { Button, Input, LoaderComponent,Container } from '../components';
 
 function UpdateEmail() {
     const [Loader, setLoader] = useState(false)
@@ -24,14 +23,13 @@ function UpdateEmail() {
 
     if (Loader) {
         return (<div className="w-full py-8 mt-4 text-center">
-            <Container>
-                <div className="flex flex-wrap">
+             <Container>
                     <div className="p-2 w-full">
                         <h1 className="text-2xl font-bold hover:text-gray-500">
                             Loading...
                         </h1>
+                        <div className="w-32 my-6 mx-auto"><LoaderComponent /></div>
                     </div>
-                </div>
             </Container>
         </div>)
     }
