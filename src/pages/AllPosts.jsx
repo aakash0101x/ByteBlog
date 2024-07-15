@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, PostCard } from '../components'
+import { Container, LoaderComponent, PostCard } from '../components'
 import appwriteService from "../appwrite/config";
 import { Query } from 'appwrite';
 import { useSelector } from 'react-redux';
@@ -27,6 +27,8 @@ function AllPosts() {
                         <h1 className="text-2xl font-bold hover:text-gray-500">
                             Loading...
                         </h1>
+                        <div className="w-32 my-6 mx-auto"><LoaderComponent /></div>
+
                         <h1 className="text-xl hover:text-gray-500">
                             If issue persists for long Try Reloading The Page
                         </h1>
