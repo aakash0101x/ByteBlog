@@ -8,7 +8,7 @@ function PostCard({ $id, title, featuredImage }) {
     <div className='duration-300 sm:hover:scale-110 lg:w-60 lg:h-60 lg:my-5'>
       <Link to={`/post/${$id}`}>
 
-        <div className='bg-cyan-100 rounded-xl flex flex-col justify-evenly items-center py-4'>
+        <div className='bg-cyan-100 rounded-md flex flex-col justify-evenly items-center py-4'>
 
           <div className='rounded-2xl'>
             <img src={appwriteService.getFilePreview(featuredImage)} alt={title}
