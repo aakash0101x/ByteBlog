@@ -37,7 +37,7 @@ THE SOFTWARE.`}
             </p>
 
             <p className="text-lg mb-4">
-                If you have any questions about this license or the terms of use, please feel free to contact us at<b><i> ak.developer0101@gmail.com</i></b>
+                If you have any questions about this license or the terms of use, please feel free to contact us at<b><i> ak.developers0101@gmail.com</i></b>
             </p>
         </div>
     )
