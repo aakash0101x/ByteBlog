@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function PostCard({ $id, title, featuredImage }) {
 
   return (
-    <div className='duration-300 hover:scale-110 lg:w-60 lg:h-60 lg:my-5'>
+    <div className='duration-300 sm:hover:scale-110 lg:w-60 lg:h-60 lg:my-5'>
       <Link to={`/post/${$id}`}>
 
         <div className='bg-cyan-100 rounded-xl flex flex-col justify-evenly items-center py-4'>
