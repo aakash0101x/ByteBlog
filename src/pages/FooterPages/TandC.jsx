@@ -40,7 +40,7 @@ function TandC() {
             </p>
 
             <p className="mb-4">
-                If you have any questions about these terms and conditions, please contact us at <b><i> ak.developer0101@gmail.com</i></b>.
+                If you have any questions about these terms and conditions, please contact us at <b><i> ak.developers0101@gmail.com</i></b>.
             </p>
 
             <p className="text-lg font-semibold mt-6">
