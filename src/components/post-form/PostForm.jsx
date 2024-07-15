@@ -86,22 +86,10 @@ export default function PostForm({ post }) {
         return () => subscription.unsubscribe();
     }, [watch, slugTransform, setValue]);
 
-    if (!userData) {
+    if (!userData || Loader) {
         return (
             <div className='text-center py-5'>
                 <h1 className='text-3xl font-extralight'>Loading...</h1>
-                <h1 className='text-xl font-extralight'>If issue persists for long,Try reloading the page</h1>
-
-            </div>
-        )
-    }
-
-    if (Loader) {
-        return (
-            <div className='text-center py-5'>
-                <h1 className='text-3xl font-extralight'>Loading...</h1>
-                <h1 className='text-xl font-extralight'>Be patient we are uploading blog to database</h1>
-
             </div>
         )
     }
@@ -135,11 +123,14 @@ export default function PostForm({ post }) {
                 />
             </div>
             <div className="w-1/3 px-2 min-w-80 mx-auto">
+                <div>
+                    <i>  we currently support only jpg,jpeg and png images</i>
+                </div>
                 <Input
                     label="Featured Image :"
                     type="file"
                     className="mb-4"
-                    accept="image/png, image/jpg, image/jpeg, image/gif"
+                    accept="image/png, image/jpg, image/jpeg"
                     {...register("image", { required: "Featured Image is required." })}
                 />
                 {errors.image && <span className="text-red-500">{errors.image.message}</span>}
