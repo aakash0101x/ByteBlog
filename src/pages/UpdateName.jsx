@@ -24,12 +24,10 @@ function UpdateName() {
     if (Loader) {
         return (<div className="w-full py-8 mt-4 text-center">
            <Container>
-                <div className="flex flex-wrap">
                     <h1 className="text-2xl font-bold hover:text-gray-500">
                         Loading...
                     </h1>
                     <div className="w-32 my-6 mx-auto"><LoaderComponent /></div>
-                </div>
             </Container>
         </div>)
     }
@@ -57,7 +55,7 @@ function UpdateName() {
     } else {
         return (
             <Container>
-                <div className='my-10 w-96  mx-auto text-2xl bg-green-500 text-white px-4 py-2 rounded-md shadow-md'>
+                <div className='my-32 w-fit  mx-auto text-2xl bg-green-500 text-white px-4 py-2 rounded-md shadow-md'>
                     Name Updated Successfully
                 </div>
               
