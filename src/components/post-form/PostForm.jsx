@@ -89,12 +89,12 @@ export default function PostForm({ post }) {
     if (!userData) {
         return (
             <div className='text-center py-5'>
-                <h1 className='text-3xl font-extralight'>Loading...</h1>
+                <h1 className='text-3xl font-extralight'>Loading....</h1>
                 <h1 className='text-2xl font-extralight'>If issue persists for long,Try reloading the page</h1>
             </div>
         )
     }
-    if (!userData) {
+    if (Loader) {
         return (
             <div className='text-center py-5'>
                 <h1 className='text-3xl font-extralight'>Loading...</h1>
