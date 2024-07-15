@@ -50,7 +50,7 @@ function Home() {
                     <div className="flex flex-wrap">
                         <div className="p-20 w-full">
                             <h1 className="text-2xl font-bold hover:text-gray-500">
-                                Login to read posts
+                                Login to read blogs
                             </h1>
                         </div>
                     </div>
