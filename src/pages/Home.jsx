@@ -80,7 +80,7 @@ function Home() {
         
         <div className='w-full py-12'>
             
-            <div className='text-center py-5'>
+            <div className='text-center py-2'>
               <h1 className='text-3xl font-extralight'>My Feed</h1>
             </div>
 
