@@ -3,28 +3,54 @@
 @tailwind utilities;
 
 .ellipsis-2-lines {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.linear_grad {
+  background: linear-gradient(315deg, rgba(101, 0, 94, 1) 3%, rgba(60, 132, 206, 1) 38%, rgba(48, 238, 226, 1) 68%, rgba(255, 25, 25, 1) 98%);
+  background-size: 400% 400%;
+  animation: gradientMove 15s linear infinite;
+}
+
+.linear_grad_text_clip {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.loader {
+  @apply border-gray-200;
+  @apply border-t-blue-500;
+  @apply rounded-full;
+  @apply w-20;
+  @apply h-20;
+  @apply border-8;
+  @apply animate-spin;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-  
-  .loader {
-    @apply border-gray-200;
-    @apply border-t-blue-500;
-    @apply rounded-full;
-    @apply w-20;
-    @apply h-20;
-    @apply border-8;
-    @apply animate-spin;
+
+  to {
+    transform: rotate(360deg);
   }
+}
