@@ -10,16 +10,6 @@ export default function Protected({ children, authentication = true }) {
     const authStatus = useSelector(state => state.auth.status)
 
     useEffect(() => {
-        //TODO: make it more easy to understand
-
-        // if (authStatus ===true){
-        //     navigate("/")
-        // } else if (authStatus === false) {
-        //     navigate("/login")
-        // }
-
-        //let authValue = authStatus === true ? true : false
-
         if (authentication && authStatus !== authentication) {
             navigate("/login")
         } else if (!authentication && authStatus !== authentication) {
@@ -31,13 +21,12 @@ export default function Protected({ children, authentication = true }) {
     return loader ? ((
         <div className="w-full py-8 mt-4 text-center">
             <Container>
-                <div className="flex flex-wrap">
-                    <div className="p-2 w-full">
-                        <h1 className="text-2xl font-bold hover:text-gray-500">
+                    <div className="p-2 w-full te">
+                        <h1 className="text-2xl text-center my-10 font-bold hover:text-gray-500">
                             Loading...
                         </h1>
+                        <div className="w-32 my-6 mx-auto"><LoaderComponent /></div>
                     </div>
-                </div>
             </Container>
         </div>
     )) : <>{children}</>
