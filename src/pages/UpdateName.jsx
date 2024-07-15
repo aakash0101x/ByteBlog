@@ -34,7 +34,7 @@ function UpdateName() {
 
     if (!isUpdated) {
         return (
-            <div className='w-80 m-auto py-8'>
+            <div className='w-80 m-auto py-16'>
                 <form onSubmit={handleSubmit(updatepsd)}>
                     <div className='space-y-5'>
                         <Input
