@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { Container } from "../components";
+import { Container, LoaderComponent } from "../components";
 
 function ManageAccount() {
   const [Loader, setLoader] = useState(true);
@@ -31,28 +31,17 @@ function ManageAccount() {
     },
   ];
 
-  if (Loader) {
+   if (Loader ||!userData) {
     return (
       <Container>
-        <div className='flex flex-col items-center justify-center min-h-screen'>
+        <div className='flex flex-col items-center justify-center h-2/3'>
           <h1 className='text-3xl font-light mb-4'>Loading...</h1>
+          <div className="w-32 my-6 mx-auto"><LoaderComponent /></div>
           <p>If the issue persists for long, try reloading the page.</p>
         </div>
       </Container>
     );
   }
-
-  if (!userData) {
-    return (
-      <Container>
-        <div className='flex flex-col items-center justify-center min-h-screen'>
-          <h1 className='text-3xl font-light mb-4'>Loading...</h1>
-          <p>If the issue persists for long, try reloading the page.</p>
-        </div>
-      </Container>
-    );
-  }
-
   return (
     <Container>
       <div className='max-w-lg mx-auto py-10'>
