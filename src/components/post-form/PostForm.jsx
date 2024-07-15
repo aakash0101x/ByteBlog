@@ -86,7 +86,17 @@ export default function PostForm({ post }) {
         return () => subscription.unsubscribe();
     }, [watch, slugTransform, setValue]);
 
-    if (!userData || Loader) {
+    if (!userData) {
+        return (
+            <div className='text-center py-5'>
+                <h1 className='text-3xl font-extralight'>Loading...</h1>
+                <h1 className='text-xl font-extralight'>If issue persists for long,Try reloading the page</h1>
+
+            </div>
+        )
+    }
+
+    if (Loader) {
         return (
             <div className='text-center py-5'>
                 <h1 className='text-3xl font-extralight'>Loading...</h1>
