@@ -78,10 +78,10 @@ function Home() {
 
     return (
         
-        <div className='w-full py-12'>
+        <div className='w-full py-12 linear_grad'>
             
             <div className='text-center'>
-              <h1 className='text-3xl font-extralight'>My Feed</h1>
+              <h1 className='text-3xl font-extralight font-bold text-white'>My Feed</h1>
             </div>
 
             <Container>
