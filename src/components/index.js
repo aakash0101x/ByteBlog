@@ -12,7 +12,7 @@ import PostForm from "./post-form/PostForm";
 import PostCard from "./PostCard";
 import AuthLayout from "./AuthLayout";
 import Input from "./Input";
-import Loader from "./Loader";
+import LoaderComponent from "./LoaderComponent";
 export {
     Header,
     Footer,
@@ -28,5 +28,5 @@ export {
     AuthLayout,
     Input,
     Select,
-    Loader
+    LoaderComponent
 }
