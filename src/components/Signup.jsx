@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import authService from '../appwrite/auth'
 import { Link, useNavigate } from 'react-router-dom'
 import { login } from '../store/authSlice'
-import { Button, Input, Logo } from './index.js'
+import { Button, Input, LoaderComponent, Logo } from './index.js'
 import { useDispatch } from 'react-redux'
 import { useForm } from 'react-hook-form'
 
@@ -36,6 +36,7 @@ function Signup() {
         return (
             <div className='text-center py-5'>
               <h1 className='text-3xl font-extralight'>Loading...</h1>
+              <div className="w-32 my-6 mx-auto"><LoaderComponent /></div>
             </div>  
         );
       }
