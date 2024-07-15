@@ -45,7 +45,7 @@ function Home() {
 
     if (status == false) {
         return (
-            <div className="w-full h-full py-8 mt-4 text-center">
+            <div className="w-full h-full py-8 mt-4 text-center linear_grad">
                 <Container>
                     <div className="flex flex-wrap">
                         <div className="p-20 w-full">
