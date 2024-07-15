@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import Container from './container/Container'
+import LoaderComponent from './LoaderComponent'
 
 export default function Protected({ children, authentication = true }) {
 
