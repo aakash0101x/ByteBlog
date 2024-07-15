@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { login as authLogin } from '../store/authSlice'
-import { Button, Input, Logo } from "./index"
+import { Button, Input, Logo, LoaderComponent } from "./index"
 import { useDispatch } from "react-redux"
 import authService from "../appwrite/auth"
 import { useForm } from "react-hook-form"
@@ -33,6 +33,7 @@ function Login() {
         return (
             <div className='text-center py-5'>
               <h1 className='text-3xl font-extralight'>Loading...</h1>
+              <div className="w-32 my-6 mx-auto"><LoaderComponent /></div>
             </div>
         );
       }
