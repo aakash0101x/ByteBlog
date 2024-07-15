@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import authService from '../appwrite/auth.js';
 import { useForm } from 'react-hook-form';
-import { Button, Input } from '../components';
-import { Container } from "../components"
+import { Button, Input, Container, LoaderComponent } from '../components';
 
 function UpdatePassword() {
     const [Loader, setLoader] = useState(false)
@@ -25,12 +24,11 @@ function UpdatePassword() {
     if (Loader) {
         return (<div className="w-full py-8 mt-4 text-center">
             <Container>
-                <div className="flex flex-wrap">
-                    <div className="p-2 w-full">
-                        <h1 className="text-2xl font-bold hover:text-gray-500">
-                            Loading...
-                        </h1>
-                    </div>
+                <div className="p-2 w-full">
+                    <h1 className="text-2xl font-bold hover:text-gray-500">
+                        Loading...
+                    </h1>
+                    <div className="w-32 my-6 mx-auto"><LoaderComponent /></div>
                 </div>
             </Container>
         </div>)
