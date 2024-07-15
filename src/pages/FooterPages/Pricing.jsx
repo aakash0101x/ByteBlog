@@ -2,9 +2,9 @@ import React from 'react'
 
 function Pricing() {
   return (
-    <div className="bg-blue-600 text-white p-6 text-center">
+    <div className="bg-blue-600 text-white p-8 px-10 text-center">
       <h1 className="text-2xl font-bold mb-2">
-        Welcome to Our Free and Open Source Blogging Website!
+        Welcome to Our Free and Open Source Blogging Website ByteBlog!
       </h1>
       <p className="text-lg mb-4">
         We're excited to offer this platform for everyone to use, modify, and share. 
@@ -24,7 +24,7 @@ function Pricing() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        View the Source Code on GitHub
+        View Source Code on GitHub
       </a>
     </div>
   )
