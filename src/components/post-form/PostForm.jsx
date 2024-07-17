@@ -100,7 +100,7 @@ export default function PostForm({ post }) {
             <div className='text-center py-5'>
                 <h1 className='text-3xl font-extralight'>Loading...</h1>
                 <div className="w-32 my-6 mx-auto"><LoaderComponent /></div>
-                <h1 className='text-2xl font-extralight'>Be patient,we are uploading blog to database</h1>
+                <h1 className='text-2xl font-extralight'>Please be patient,we are uploading blog to database</h1>
             </div>
         )
     }
