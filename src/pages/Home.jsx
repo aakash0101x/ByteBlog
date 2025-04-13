@@ -45,7 +45,7 @@ function Home() {
 
     if (status == false) {
         return (
-            <div className="w-full h-full py-8 mt-4 text-center linear_grad">
+            <div className="w-full h-full py-36 mt-1 mb-1 text-center linear_grad">
                 <Container>
                     <div className="flex flex-wrap">
                         <div className="p-20 w-full">
@@ -61,7 +61,7 @@ function Home() {
     else if (posts.length === 0
     ) {
         return (
-            <div className="w-full py-8 mt-4 text-center">
+            <div className="w-full py-36 mt-1 text-center">
                 <Container>
                     <div className="flex flex-wrap">
                         <div className="p-2 w-full">
